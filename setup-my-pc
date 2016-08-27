@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo "============================================================================="
+echo " Welcome... Setup My PC would make your pc look and feel like Samuel Amoah's "
+echo "============================================================================="
+
+
+#
+# Installing utility console apps
+# - Create a variable with the list of programs to install
+# - Run apt-get install to install programs
+#
+programLists=(
+	'git-all'
+	'vim'
+	'tree'
+)
+
+su -c apt-get install ${programList[@]}
+
+
+
+#
+# Terminal Configuration
+# - Put aliases in ~/.bashrc
+# - Configuration for vim in ~/.vimrc
+#
+
+
+
