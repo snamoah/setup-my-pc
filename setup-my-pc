@@ -42,7 +42,7 @@ else
 # Terminal Configuration
 # - Git configuration
 git config --global user.name "Samuel Nkoom Amoah"
-git config --global user.email "snamoah@gmail.com"
+git config --global user.email snamoah@gmail.com
 
 #
 # Aliases
