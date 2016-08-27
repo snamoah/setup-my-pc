@@ -6,3 +6,10 @@ Plugin 'mattn/emmet-vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'spf13/vim-preview'
+Plugin 'editorconfig/editorconfig-vim'
+
+filetype plugin indent on
+set number
+set tabstop=2
+set shiftwidth=2
+set expandtab 
