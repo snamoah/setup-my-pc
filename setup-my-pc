@@ -16,15 +16,29 @@ programLists=(
 	'tree'
 )
 
-su -c apt-get install ${programList[@]}
+su -c apt-get install ${programList[@]} || (echo 'Error installing programs' && exit 2)
 
 
 
 #
 # Terminal Configuration
-# - Put aliases in ~/.bashrc
-# - Configuration for vim in ~/.vimrc
+# - Git configuration
+git config --global user.name "Samuel Nkoom Amoah"
+git config --global user.email "snamoah@gmail.com"
+
 #
+# Aliases
+# (Read content from aliases file and append into .bashrc file in /home directory
+#
+#
+cat aliases >> ~/.bashrc
+exec bash
 
 
+#
+# - Install vim plugins
+#
+# First verify if ~/.vim/bundle folder exists else create it
+#
+mkdir -p ~/.vim/bundle
 
