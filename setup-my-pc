@@ -19,6 +19,24 @@ programLists=(
 su -c apt-get install ${programList[@]} || (echo 'Error installing programs' && exit 2)
 
 
+#
+# Installing programs with different setup steps
+# 1. Meteor
+if hash meteor 2>/dev/null; then
+else
+	curl https://install.meteor.com/ | sh
+fi
+
+# 2. Ruby and Rails
+if hash rvm 2>/dev/null; then
+else
+	curl -sSL https://get.rvm.io | bash -s stable --ruby
+if
+
+# check if rails is installed else install it
+if hash rails 2>/dev/null; then
+else
+	gem install rails
 
 #
 # Terminal Configuration
@@ -40,5 +58,5 @@ exec bash
 #
 # First verify if ~/.vim/bundle folder exists else create it
 #
-mkdir -p ~/.vim/bundle
-
+cat vim-plugins >> ~/.vimrc
+vim +PluginInstall +qall # install plugins 
