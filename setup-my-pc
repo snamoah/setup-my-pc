@@ -19,6 +19,7 @@ programLists=(
 	'vagrant'
 	'nodejs'
 	'npm'
+	'variety'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
