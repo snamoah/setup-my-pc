@@ -17,6 +17,8 @@ programLists=(
 	'tmux'
 	'virtualbox'
 	'vagrant'
+	'nodejs'
+	'npm'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
