@@ -21,6 +21,7 @@ programLists=(
 	'npm'
 	'variety'
 	'gnome-tweak-tool'
+	'gparted'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
