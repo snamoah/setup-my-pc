@@ -20,6 +20,7 @@ programLists=(
 	'nodejs'
 	'npm'
 	'variety'
+	'gnome-tweak-tool'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
