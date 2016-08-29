@@ -79,6 +79,9 @@ echo
 echo "Setting up aliases..."
 cat aliases >> ~/.bashrc
 
+echo
+echo "Customizing bash prompt..."
+cat bash-prompt >> ~/.bashrc
 
 #
 # - Install vim plugins
