@@ -8,4 +8,4 @@
 4. Run `sudo setup-my-pc`
 5. Go have your coffee.
 
-Hopefully, have a very lone while... ;p everything should be fine and the pc should look like mine.... yaaay!!!
+Hopefully, after a very long while... ;p everything should be fine and the pc should look like mine.... yaaay!!!
