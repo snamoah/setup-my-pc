@@ -17,3 +17,8 @@ alias gfrf='git flow release finish'
 alias gch='git checkout'
 alias gl='git log'
 alias gb='git branch'
+
+alias mt='meteor'
+alias mtc='meteor create'
+alias mtr='meteor remove'
+

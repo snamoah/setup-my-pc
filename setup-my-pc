@@ -22,10 +22,17 @@ programLists=(
 	'variety'
 	'gnome-tweak-tool'
 	'gparted'
+  'vlc'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
 
+
+echo "Configuring node..."
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+echo "Updating npm to latest..."
+sudo npm install npm@latest -g
 
 #
 # Installing programs with different setup steps
@@ -58,6 +65,15 @@ if hash rails 2>/dev/null; then
 else
 	gem install rails || (echo "Error: Couldn't install rails. Skipping...\nVerify that you have rvm installed and run\n\n\tgem install rails"; exit)
 fi
+
+echo
+echo "Installing Brave Browser..."
+if hash brave; then
+  echo "Brave browser has already installed. Skipping..."
+else
+  (wget -O brave.deb https://laptop-updates.brave.com/latest/dev/ubuntu64 && sudo dpkg -i ./brave.deb && rm -f ./brave.deb) || (echo "Error: Couldn't install Brave browser")
+fi
+
 
 #
 # Terminal Configuration
