@@ -11,7 +11,7 @@ echo "==========================================================================
 # - Run apt-get install to install programs
 #
 programLists=(
-	'git-all'
+	'git'
 	'vim'
 	'tree'
 	'tmux'
@@ -23,6 +23,8 @@ programLists=(
 	'gnome-tweak-tool'
 	'gparted'
   'vlc'
+  'git-flow'
+  'vim-gtk'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
@@ -84,8 +86,6 @@ echo "Configuring Git..."
 git config --global user.name "Samuel Nkoom Amoah"
 git config --global user.email snamoah@gmail.com
 
-echo "Installing git flow..."
-apt-get install git-flow
 #
 # Aliases
 # (Read content from aliases file and append into .bashrc file in /home directory
