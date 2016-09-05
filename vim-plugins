@@ -16,6 +16,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'spf13/vim-preview'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()            " required
 filetype plugin indent on

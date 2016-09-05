@@ -21,4 +21,6 @@ alias gb='git branch'
 alias mt='meteor'
 alias mtc='meteor create'
 alias mtr='meteor remove'
+alias mta='meteor add'
 
+alias gfp='git flow feature publish'
