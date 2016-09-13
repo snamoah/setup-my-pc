@@ -24,3 +24,5 @@ set number
 set tabstop=2
 set shiftwidth=2
 set expandtab 
+
+let g:user_emmet_mode='a'

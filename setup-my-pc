@@ -25,6 +25,7 @@ programLists=(
   'vlc'
   'git-flow'
   'vim-gtk'
+  'mongodb-clients'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
