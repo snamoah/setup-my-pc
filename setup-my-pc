@@ -26,6 +26,7 @@ programLists=(
   'git-flow'
   'vim-gtk'
   'mongodb-clients'
+  'python-pip'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
