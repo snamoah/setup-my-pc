@@ -79,6 +79,15 @@ else
 fi
 
 
+echo
+echo "Updating pip to latest version..."
+if hash pip; then
+  pip install --upgrade pip
+
+  echo
+  echo "Installing Flask..."
+  pip install Flask
+
 #
 # Terminal Configuration
 # - Git configuration
