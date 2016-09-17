@@ -87,7 +87,19 @@ if hash pip; then
   echo
   echo "Installing Flask..."
   pip install Flask
+fi
 
+echo
+echo "Installing f.lux..."
+if hash f.lux; then
+  echo "F.lux already installed. Skipping..."
+else
+  sudo add-apt-repository ppa:nathan-renniewaldock/flux
+  sudo apt-get update
+  sudo apt-get install fluxgui -y
+fi
+
+  
 #
 # Terminal Configuration
 # - Git configuration
