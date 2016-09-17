@@ -19,7 +19,6 @@ programLists=(
 	'vagrant'
 	'nodejs'
 	'npm'
-	'variety'
 	'gnome-tweak-tool'
 	'gparted'
   'vlc'
@@ -99,7 +98,15 @@ else
   sudo apt-get install fluxgui -y
 fi
 
-  
+echo
+echo "Installing variety..."
+if hash variety; then
+  echo "Variety already installed. Skipping..."
+else
+  sudo add-apt-repository ppa:peterlevi/ppa
+  sudo apt-get update && sudo apt-get install variety -y
+fi
+
 #
 # Terminal Configuration
 # - Git configuration
