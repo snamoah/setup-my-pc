@@ -140,9 +140,17 @@ echo
 echo
 echo "Configuring vim editor..."
 mkdir -p ~/.vim/bundle      # Create vim plugin directory
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-cat vim-plugins >> ~/.vimrc
+mkdir -p ~/.vim/colors
 
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Download molokai.vim color scheme for vim
+# github https://github.com/
+curl https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim -o ~/.vim/colors/molokai.vim
+
+# setup .vimrc on pc
+cat vim-plugins >> ~/.vimrc
 # Editor config and tpope/fugitive conflict fixes
 echo "let g:EditorConfig_exclude_patterns = ['fugitive://.*']" >> ~/.vimrc
 

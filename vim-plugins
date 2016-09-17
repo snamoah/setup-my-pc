@@ -26,3 +26,4 @@ set shiftwidth=2
 set expandtab 
 
 let g:user_emmet_mode='a'
+let g:molokai_original = 1
