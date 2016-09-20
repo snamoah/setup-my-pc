@@ -29,7 +29,7 @@ programLists=(
   'zsh'
 )
 
-apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
+apt-get install ${programLists[@]} -y || (echo 'Error installing programs'; exit 2)
 
 echo
 echo "Installing Oh-my-zsh..."
