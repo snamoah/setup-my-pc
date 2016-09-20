@@ -26,10 +26,14 @@ programLists=(
   'vim-gtk'
   'mongodb-clients'
   'python-pip'
+  'zsh'
 )
 
 apt-get install ${programLists[@]} || (echo 'Error installing programs'; exit 2)
 
+echo
+echo "Installing Oh-my-zsh..."
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Configuring node..."
 sudo ln -s /usr/bin/nodejs /usr/bin/node
